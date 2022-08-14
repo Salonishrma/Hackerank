@@ -1,6 +1,23 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2638
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n=3;
+    int a[n],b[n];
+    int alice=0;
+    int bob=0;
+    for(int i=0;i<n;i++)
+        cin>>a[i];
+    
+    for(int i=0;i<n;i++)
+        cin>>b[i];
+    
+    for(int i=0;i<n;i++){
+        if(a[i]>b[i])
+            alice++;
+        else if(a[i] < b[i])
+           bob++;
+    }
+        cout<<alice<<" "<<bob<<endl;
+    
+    return 0;
 }
